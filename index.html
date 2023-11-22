@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <SCript src="script.js" defer ></SCript>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <title>calculator-app</title>
+</head>
+<body>
+    <img class="logo" src="images/logo.svg"/>
+    <main>
+        <section>
+        <form id="firstform">
+            <label>Bill</label>
+            <input  type="number" placeholder="0" />
+            <img src="images/icon-dollar.svg"/>
+        </form>
+        <p>Select Tip %</p>
+        <div class="percentage">
+            <div class="percentagediv"><span>5%</span></div>
+            <div class="percentagediv"><span>10%</span></div>
+            <div class="percentagediv"><span>15%</span></div>
+            <div class="percentagediv"><span>25%</span></div>
+            <div class="percentagediv"><span>50%</span></div>
+            <form id="costum"><input type="number" placeholder="Costum"></form>
+        </div>
+        <form id="secondform" >
+            <label>Number of People</label>
+            <div class="error"><p>Can't be zero</p></div>
+            <input type="number" placeholder="0"  />
+            <img src="images/icon-person.svg"/>
+        </form>
+    </section>
+    <article>
+        <div class="articlefirstdiv">
+            <div class="tipamount">
+                <h2>Tip Amount</h2>
+                <p>/ person</p>
+            </div>
+            <div class="firstmoneydiv">
+                <img src="images/green-dollar.svg"/>
+                <h3>0.00</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="articlefirstdiv" id="articleseconddiv">
+            <div class="tipamount" id="#secondamount">
+                <h2>Total</h2>
+                <p>/ person</p>
+            </div>
+            <div class="firstmoneydiv" id="secondmoneydiv">
+                <img src="images/green-dollar.svg"/>
+                <h3>0.00</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="reset" ><p>RESET</p></div>
+    </article>
+    </main>
+</body>
+</html>
+
